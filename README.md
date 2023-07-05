@@ -1,4 +1,3 @@
-
 # Seaborn - Lab
 
 ## Introduction
@@ -51,7 +50,7 @@ data = np.random.normal(size=(20, 10)) + np.arange(10) / 2
 data = np.random.normal(size=(20, 10)) + np.arange(10) / 2
 ```
 
-### Basic Visualiations with Seaborn
+### Basic Visualizations with Seaborn
 
 We'll start off by creating a boxplot with the dataset we just created so that we can get a feel for the common workflow of Seaborn. 
 
@@ -72,7 +71,9 @@ boxplot = sns.boxplot(data=data)
 ```
 
 
+    
 ![png](index_files/index_8_0.png)
+    
 
 
 That's a nice looking visualization, for only a single line of code! However, it's missing axis labels and a title. Let's fix that. 
@@ -108,7 +109,9 @@ boxplot.set(xlabel = "X Label", ylabel='Y Label', title='Example Boxplot')
 
 
 
+    
 ![png](index_files/index_11_1.png)
+    
 
 
 That wasn't too bad! Note that we can also use **_Method Chaining_** to set all the label and title information by combining the two lines in the cell above!
@@ -118,6 +121,11 @@ In the cell below:
 * Recreate the labeled boxplot by calling `.set()` and passing in the appropriate parameter values immediately after calling `sns.boxplot(data=data)` to create the visualization. 
 
 **_NOTE_**: For this visualization, you do not need to store the object in a variable. Just call the methods.
+
+
+```python
+
+```
 
 
 ```python
@@ -135,7 +143,9 @@ sns.boxplot(data=data).set(xlabel = "X Label", ylabel='Y Label', title='Example 
 
 
 
-![png](index_files/index_13_1.png)
+    
+![png](index_files/index_14_1.png)
+    
 
 
 Great! As you can see, Seaborn is a pretty easy library to work with. It also has very detailed and easy-to-follow documentation, complete with a ton of examples and tutorials. If you're ever unsure of how to build something, don't be afraid to look at the [Seaborn Documentation](https://seaborn.pydata.org/), or Google!
@@ -171,7 +181,9 @@ sns.boxplot(data=data).set(xlabel = "X Label", ylabel='Y Label', title='Example 
 
 
 
-![png](index_files/index_16_1.png)
+    
+![png](index_files/index_17_1.png)
+    
 
 
 That's much easier to read! There are several different styles that we can choose from. To see examples of the different styles we can use, check out the [documentation](https://seaborn.pydata.org/tutorial/aesthetics.html) for controlling figure aesthetics.
@@ -207,7 +219,9 @@ sns.boxplot(data=data).set(xlabel = "X Label", ylabel='Y Label', title='Example 
 
 
 
-![png](index_files/index_19_1.png)
+    
+![png](index_files/index_20_1.png)
+    
 
 
 Much better! That's much more readable. From smallest to largest, the different context settings we can use are `'paper'`, `'notebook'`, `'talk'`, and `'poster'`. 
@@ -408,7 +422,9 @@ sns.lmplot(x="total_bill", y="tip", hue="smoker", data=tips);
 ```
 
 
-![png](index_files/index_31_0.png)
+    
+![png](index_files/index_32_0.png)
+    
 
 
 Very cool! That visualization contains _a lot_ of information, and it does it in a way that is easy to interpret and understand. Best of all, it didn't take much work on our part--all we had to do was tell the function the name of the column to use for the x axis, the name of the column to use for the y axis, and the name of the variable to condition on, as denoted by the two different colors. 
@@ -431,7 +447,9 @@ sns.lmplot(x="total_bill", y="tip", hue="smoker",
 ```
 
 
-![png](index_files/index_34_0.png)
+    
+![png](index_files/index_35_0.png)
+    
 
 
 ## Summary
