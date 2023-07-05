@@ -1,4 +1,3 @@
-
 # Seaborn - Lab
 
 ## Introduction
@@ -36,7 +35,7 @@ Great! Now, run the cell below to create a sample dataset.
 data = np.random.normal(size=(20, 10)) + np.arange(10) / 2
 ```
 
-### Basic Visualiations with Seaborn
+### Basic Visualizations with Seaborn
 
 We'll start off by creating a boxplot with the dataset we just created so that we can get a feel for the common workflow of Seaborn. 
 
@@ -72,6 +71,11 @@ In the cell below:
 * Recreate the labeled boxplot by calling `.set()` and passing in the appropriate parameter values immediately after calling `sns.boxplot(data=data)` to create the visualization. 
 
 **_NOTE_**: For this visualization, you do not need to store the object in a variable. Just call the methods.
+
+
+```python
+
+```
 
 Great! As you can see, Seaborn is a pretty easy library to work with. It also has very detailed and easy-to-follow documentation, complete with a ton of examples and tutorials. If you're ever unsure of how to build something, don't be afraid to look at the [Seaborn Documentation](https://seaborn.pydata.org/), or Google!
 
